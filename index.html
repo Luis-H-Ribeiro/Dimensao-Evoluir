@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dimensão Evoluir</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="container-cabecalho">
+      <a href="#"><img id="logo" class="logo" src="./img/logo.png" alt="Logo com uma arvore escrito dimensão evoluir"></a>
+      <!-- <h1 class="titulo">Dimensão</h1>
+      <h1 class="sub-titulo">Evoluir</h1> -->
+      <div class="lista">
+        <ul class="lista-menu">
+          <li><a href="#" class="lista-menu_link">Home</a></li>
+          <li><a href="#" class="lista-menu_link">Sobre</a></li>
+          <li><a href="#" class="lista-menu_link">Contatos</a></li>
+          <li><a href="#" class="lista-menu_link">Localização</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="home">
+    <div class="container-home">
+      <div class="container-home_carrossel">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        
+        <div class="slide first">
+          <img src="./img/sala01.jpeg" alt="sala de atendimento">
+        </div>
+        <div class="slide">
+          <img src="./img/sala02.jpeg" alt="sala de atendimento02">
+        </div>
+        <div class="slide">
+          <img src="./img/sala03.jpeg" alt="sala de atendimento03">
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+      </div>
+
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- <h1 class="titulo">Dimensão</h1>
+        <h2 class="sub-titulo">Evoluir</h2>
+        <h3>Tudo sobre <strong>Dimensão Evoluir</strong></h3> -->
+
+  <section class="sobre">
+    <div class="container-sobre">
+      <div class="container-paragrafo">
+        <p>
+          A psicopedagogia vem trabalhar com as dificuldades de aprendizagem e os diversos fatores que conduzem ao mau desempenho acadêmico. Para um diagnóstico completo das reais causas deste problema e o possível trabalho terapêutico para  melhora dos sintomas, é necessário que se analise os diversos aspectos que podem estar envolvidos, podendo estes ser de origem orgânica, cognitiva, emocional, social ou pedagógica. Desta forma, o trabalho psicopedagógico pode ser dividido em dois momentos: a avaliação diagnóstica e o atendimento psicopedagógico terapêutico, quando recomendado.
+        </p>
+        <img class="img-sala" src="./img/sala01.jpeg" alt="Uma sala de aula">
+        <img class="img-sala" src="./img/sala02.jpeg" alt="Uma sala de aula">
+        <p>
+          Na avaliação psicopedagógica são utilizadas técnicas psicopedagógicas específicas onde ao final da avaliação, o profissional terá informações suficientes não só para esclarecer as reais causas das dificuldades apresentadas pelo paciente, como também para realizar o atendimento psicopedagógico terapêutico para a melhora dos sintomas, caso seja necessário.
+        </p>
+        
+        <p>
+          No caso do atendimento psicopedagógico terapêutico ser necessário, o profissional dará continuidade ao trabalho já iniciado com o paciente a partir de uma visão global do mesmo e sua contextualização na família, e no meio social em que vive. O profissional tendo agora uma maior compreensão do seu “modelo de aprendizagem” e as causas que estariam interferindo em seu aprender, poderá intervir para uma progressiva melhora deste quadro.
+        </p>
+        <img class="img-sala" src="./img/sala03.jpeg" alt="Uma sala de aula">
+      </div>
+    </div>
+  </section>
+
+  <section class="contato">
+      <form>
+          <fieldset>
+              <label for="nome-sobrenome">Nome e Sobrenome</label>
+              <input type="text" id="nome-sobrenome" class="input-padrao" required>
+
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" class="input-padrao" placeholder="(XX) XXXXX-XXXX"required>
+
+              <label for="email">E-mail</label>
+              <input type="email" id="email" class="input-padrao" placeholder="seuemail@seudomínio.com" required>
+
+              <label for="mensagem">Mensagem</label>
+              <textarea cols="75" rows="10" id="mensagem" class="input-padrao" required></textarea>
+          </fieldset>
+
+          <fieldset>    
+              <legend>Como prefere nosso contato?</legend>
+              <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+              
+
+              <label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+          
+
+              <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+          </fieldset>
+
+          <fieldset>
+              <legend>Qual horário prefere ser atendido?</legend>
+              <select>
+                  <option>Manhã</option>
+                  <option>Tarde</option>
+                  <option>Noite</option>
+              </select>
+          </fieldset>
+
+          <label for="checkbox"><input type="checkbox" class="checkbox" checked id="checkbox"> Gostaria de receber nossas novidades por e-mail?</label>
+
+          <input type="submit" value="Enviar formulário" class="enviar">
+      </form>
+
+      <table>
+          <thead>
+              <tr>
+                  <th>Dia</th>
+                  <th>Horário</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Segunda-feira</td>
+                  <td>08h às 20h</td>
+              </tr>
+              <tr>
+                  <td>Quarta-feira</td>
+                  <td>08h às 20h</td>
+              </tr>
+              <tr>
+                  <td>Sexta-feira</td>
+                  <td>08h às 20h</td>
+              </tr>
+          </tbody>
+      </table>
+  </section>
+
+
+
+
+
+  <footer>
+    <img class="logo" src="./img/logo.png" alt="logo ">
+    <p class="rodape">&copy;Dimensão Evoluir</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
