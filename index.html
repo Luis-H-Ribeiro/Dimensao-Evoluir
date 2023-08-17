@@ -22,20 +22,18 @@
   <header class="cabecalho">
     <div class="container-cabecalho">
       <a href="#"><img id="logo" class="logo" src="./img/logo.png" alt="Logo com uma arvore escrito dimensão evoluir"></a>
-      <!-- <h1 class="titulo">Dimensão</h1>
-      <h1 class="sub-titulo">Evoluir</h1> -->
       <div class="lista">
-        <ul class="lista-menu">
-          <li><a href="#" class="lista-menu_link">Home</a></li>
-          <li><a href="#" class="lista-menu_link">Sobre</a></li>
-          <li><a href="#" class="lista-menu_link">Contatos</a></li>
-          <li><a href="#" class="lista-menu_link">Localização</a></li>
-        </ul>
+        <div class="lista-menu">
+        <button onclick="mostrarSecao(1)" id="botao1" class="botao">Home</button>
+        <button onclick="mostrarSecao(2)" id="botao2" class="botao">Sobre</button>
+        <button onclick="mostrarSecao(3)" id="botao3" class="botao">Contatos</button>
+        <button onclick="mostrarSecao(4)" id="botao4" class="botao">Localização</button>
+        </div>
       </div>
     </div>
   </header>
 
-  <section class="home">
+  <section class="home" id="secao1">
     <div class="container-home">
       <div class="container-home_carrossel">
         <input type="radio" name="radio-btn" id="radio1">
@@ -68,11 +66,7 @@
     </div>
   </section>
 
-  <!-- <h1 class="titulo">Dimensão</h1>
-        <h2 class="sub-titulo">Evoluir</h2>
-        <h3>Tudo sobre <strong>Dimensão Evoluir</strong></h3> -->
-
-  <section class="sobre">
+  <section class="sobre" id="secao2">
     <div class="container-sobre">
       <div class="container-paragrafo">
         <img class="img-perfil" src="./img/sala01.jpeg" alt="Uma sala de aula">
@@ -92,7 +86,7 @@
     </div>
   </section>
 
-  <section class="contato">
+  <section class="contato" id="secao3">
       <form>
           <fieldset>
               <label for="nome-sobrenome">Nome e Sobrenome</label>
@@ -131,7 +125,7 @@
       </form>
   </section>
 
-  <section class="mapa">
+  <section class="mapa" id="secao4">
     <h3>Nosso estabelecimento está localizado no coração da cidade.</h3>
     <div class="mapa-conteudo">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.871474850273!2d-46.38810978823634!3d-23.96498457645674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1d7d76794e3b%3A0x25fc6d0e138444d5!2sDimens%C3%A3o%20Evoluir%20Psicopedagogia!5e0!3m2!1spt-BR!2sbr!4v1692232140002!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -151,10 +145,7 @@
       <img class="img-sala" src="./img/sala02.jpeg" alt="Uma sala de aula">
       <img class="img-sala" src="./img/sala03.jpeg" alt="Uma sala de aula">
     </div>
-
   </section>
-
-
 
   <footer>
     <img class="logo" src="./img/logo.png" alt="logo ">
