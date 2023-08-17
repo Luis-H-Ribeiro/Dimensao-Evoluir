@@ -18,6 +18,7 @@ body {
 }
 
 .logo {
+    padding-top: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,7 +189,7 @@ body {
 	height: 525px;
 }
 
-.img-sala {
+.img-perfil {
     border-radius: 50px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.625);
     margin: 2em;
@@ -225,15 +226,15 @@ form label, form legend {
     margin: 0 0 12px;
 }
 
+fieldset {
+    margin: 1em;
+}
+
 .input-padrao {
     display: block;
     margin: 0 0 20px;
     width: 50%;
     padding: 10px 25px;
-}
-
-.checkbox {
-    margin: 20px 0;
 }
 
 select {
@@ -268,27 +269,46 @@ option {
     transform: scale(1.2);
 }
 
-table {
-    margin: 20px 40px;
+.mapa {
+    padding: 3em 0;
 }
 
-thead {
-    background: #555555;
-    color: #FFFFFF;
+.mapa h3 {
+    margin: 0 0 2em;
+    text-align: center;
+    font-size: 20px;
 }
 
-td, th {
-    border: 1px solid #000000;
-    padding: 10px 20px;
+.mapa-conteudo {
+    display: flex;
+    justify-content: center;
+    width: 940px;
+    margin: 30px auto;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.img-sala {
+    width: 350px;
+    height: 250px;
+}
+
+.Copyright {
+    color:black;
+    font: --fonte-footer;
+    font-size: 13px;
+    margin-bottom: 1em;
 }
 
 footer {
-    color:black;
-    font: --fonte-footer;
-    text-align: center;
     padding-bottom: 10px;
+    text-align: center;
     width : 100%;
     background-image: linear-gradient(to bottom, #DDEFFF, #edd99d );
 }
-
-
