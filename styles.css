@@ -10,11 +10,10 @@
 }
 
 body {
-    background-color: white;
     font-family: Arial;
     font-size: 25px;
     font-weight: 400;
-    background-image: linear-gradient(to bottom, white, #0386ff, white);
+    background-image: linear-gradient(to bottom, white, #0386ff, white,#dea700 130%);
 }
 
 .logo {
@@ -31,7 +30,6 @@ body {
 .lista-menu_link {
     text-decoration: none;
     color: black;
-
 }
 
 .lista-menu_link:hover {
@@ -310,5 +308,4 @@ footer {
     padding-bottom: 10px;
     text-align: center;
     width : 100%;
-    background-image: linear-gradient(to bottom, #DDEFFF, #edd99d );
 }
