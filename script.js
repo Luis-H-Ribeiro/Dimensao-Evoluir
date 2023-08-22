@@ -1,3 +1,12 @@
+// Função menu-hamburguer
+function clickMenu() {
+  if (itens.style.display == 'block') {
+    itens.style.display = 'none'
+  } else {
+    itens.style.display = 'block'
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
 document.querySelector('.home').classList.add('active');
 });

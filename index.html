@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
   <title>Dimensão Evoluir</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
@@ -24,12 +25,22 @@
       <a href="#"><img id="logo" class="logo" src="./img/logo.png" alt="Logo com uma arvore escrito dimensão evoluir"></a>
       <div class="lista">
         <div class="lista-menu">
-        <button onclick="mostrarSecao(1)" id="botao1" class="botao">Home</button>
-        <button onclick="mostrarSecao(2)" id="botao2" class="botao">Sobre</button>
-        <button onclick="mostrarSecao(3)" id="botao3" class="botao">Contatos</button>
-        <button onclick="mostrarSecao(4)" id="botao4" class="botao">Localização</button>
+          <button onclick="mostrarSecao(1)" id="botao1" class="botao">Home</button>
+          <button onclick="mostrarSecao(2)" id="botao2" class="botao">Sobre</button>
+          <button onclick="mostrarSecao(3)" id="botao3" class="botao">Contatos</button>
+          <button onclick="mostrarSecao(4)" id="botao4" class="botao">Localização</button>
         </div>
       </div>
+      
+      <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+      <menu id="itens" class="menu-hamburguer">
+        <ul>
+          <li><a onclick="mostrarSecao(1)" id="botao1" class="botao">Home</a></li>
+          <li><a onclick="mostrarSecao(2)" id="botao2" class="botao">Sobre</a></li>
+          <li><a onclick="mostrarSecao(3)" id="botao3" class="botao">Contatos</a></li>
+          <li><a onclick="mostrarSecao(4)" id="botao4" class="botao">Localização</a></li>
+        </ul>
+      </menu>
     </div>
   </header>
 

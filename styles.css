@@ -15,21 +15,26 @@ body {
     background-image: linear-gradient(to bottom, white, #0386ff, white,#dea700 130%);
 }
 
+.cabecalho {
+    color: #fff;
+    padding: 10px 0;
+}
+
 .logo {
     padding-top: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 200px;
+    height: 100%;
+    width: 15vw;
     margin: 0 auto;
     border-radius: 50px;
 }
 
-#botao1:active {
-    color: white;
-    transform: scale(1.2);
+.menu-hamburguer {
+    display: none;
 }
+
 
 .botao {
     color: black;
@@ -37,6 +42,7 @@ body {
     border: none;
     font-size: 25px;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .botao.clicado {
@@ -249,7 +255,7 @@ option {
 }
 
 .enviar {
-    width: 15%;
+    width: 25%;
     padding: 15px 0;
     background: orange;
     color: white;
@@ -308,3 +314,104 @@ footer {
     text-align: center;
     width : 100%;
 }
+
+/* Estilos para telas menores, como celulares */
+@media screen and (max-width: 767px) {
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .cabecalho {
+        padding: 10px 0;
+        text-align: center;
+        display: block;
+    }
+
+    .logo {
+        width: auto;
+        height: 35vw;
+    }
+
+    .lista-menu {
+        display: none;
+    }
+
+    #burguer {
+        display: block;
+        color: white;
+        background-color: black;
+        padding: 10px;
+    }
+
+    menu {
+        display: none;
+    }
+
+    menu > ul {
+        list-style-type: none;
+    }
+
+    menu > ul > li > a {
+        display: block;
+        padding: 5px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .botao {
+        background-color: grey;
+        display: block;
+        color: black;
+        cursor: pointer;
+        border-top: 1px solid black;
+    }
+
+    #botao4 {
+        border-bottom: 1px solid black;
+    }
+
+    .container-home {
+        width: 100%;
+    }
+  
+    .container-home_carrossel {
+        width: 100%;
+        flex-direction: column;
+    }
+  
+    .slide {
+        width: 100%;
+    }
+  
+    .slide img {
+        width: 100%; 
+        height: auto; 
+    }
+  
+    .manual-navigation,
+    .navigation-auto {
+        width: 100%; 
+    }
+  
+    .manual-btn {
+        margin-right: 10px; 
+    }
+  
+    .img-perfil {
+        width: 100%; 
+        height: auto; 
+    }
+  
+}
+  
+  /* Estilos para tablets e telas maiores */
+  @media (min-width: 768px) {
+    /* Adicione estilos específicos para tablets aqui */
+  }
+  
+  /* Estilos para telas grandes (PC) */
+  @media (min-width: 1024px) {
+    /* Adicione estilos específicos para PCs aqui */
+  }
