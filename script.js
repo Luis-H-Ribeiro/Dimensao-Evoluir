@@ -59,3 +59,39 @@ function nextImage() {
   }
   document.getElementById('radio'+count).checked = true
 }
+
+document.getElementById("telefone").addEventListener("input", function () {
+  // Remove todos os caracteres não numéricos
+  var telefone = this.value.replace(/\D/g, "");
+
+  // Formata o número de telefone conforme necessário
+  if (telefone.length === 11) {
+      this.value = "(" + telefone.substring(0, 2) + ") " + telefone.substring(2, 7) + "-" + telefone.substring(7);
+      document.getElementById("telefoneErro").textContent = "";
+  } else {
+      document.getElementById("telefoneErro").textContent = "Formato inválido";
+  }
+});
+
+// Função para validar o formulário
+function validarFormulario(event) {
+  event.preventDefault(); // Impede o envio padrão do formulário
+
+  // Obtém os valores dos campos
+  const nomeSobrenome = document.getElementById('nome-sobrenome').value;
+  const telefone = document.getElementById('telefone').value;
+  const email = document.getElementById('email').value;
+  //const mensagem = document.getElementById('mensagem').value;
+
+  // Verifica se todos os campos estão preenchidos
+  if (nomeSobrenome && telefone && email) {
+    // Exibe o alerta de sucesso
+    alert("Muito obrigado, seus dados foram cadastrados e entraremos em contato em breve.");
+    // Limpa o formulário (opcional)
+    document.getElementById('formulario').reset();
+  } else {
+    alert("Por favor, preencha todos os campos do formulário.");
+  }
+}
+// Adiciona um ouvinte de evento para o envio do formulário
+document.getElementById('formulario').addEventListener('submit', validarFormulario);
