@@ -1,0 +1,330 @@
+/* Estilos para telas medias, como tablet*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    .whatsapp-link {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
+    }
+
+    .fa-whatsapp {
+        margin-top: 16px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .menu-hamburguer {
+        display: none;
+    }
+
+    #burguer {
+        display: none;
+    }
+
+    .botao {
+        color: black;
+        background: transparent;
+        border: none;
+        font-size: 25px;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    .botao.clicado {
+        color: white;
+        transform: scale(1.5);
+    }
+
+    .lista-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2em;
+        column-gap: 2em;
+        margin: 1em 0 1em 0;
+    }
+
+    .container-sobre {
+        margin: 0 auto;
+        width: 800px;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .container-sobre_carrossel {
+        width: 400%;
+        height: 500px;
+        display: flex;
+    }
+
+    .container-sobre_carrossel input {
+        display: none;
+    }
+
+    .slide {
+        width: 25%;
+        position: relative;
+        transition: 2s;
+    }
+
+    .slide img {
+        width: 800px;
+    }
+
+    .manual-navigation {
+        position: absolute;
+        width: 800px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manual-btn {
+        border: 2px solid #fff;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .manual-btn:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .manual-btn:hover {
+        background-color: #fff;
+    }
+
+    #radio1:checked~.first {
+        margin-left: 0;
+    }
+
+    #radio2:checked~.first {
+        margin-left: -25%;
+    }
+
+    #radio3:checked~.first {
+        margin-left: -50%;
+    }
+
+    .navigation-auto div {
+        border: 2px solid #0386ff;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .navigation-auto {
+        position: absolute;
+        width: 800px;
+        margin-top: 460px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-auto div:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    #radio1:checked~.navigation-auto .auto-btn1 {
+        background-color: #fff;
+    }
+
+    #radio2:checked~.navigation-auto .auto-btn2 {
+        background-color: #fff;
+    }
+
+    #radio3:checked~.navigation-auto .auto-btn3 {
+        background-color: #fff;
+    }
+
+    .container-sobre_txt {
+        padding: 1em 1em;
+        margin: 0 2em 1em 2em;
+        background-color: var(--cor-de-fundo);
+        border-radius: 10px;
+    }
+
+    .titulo-sobre {
+        padding-left: 2em;
+        margin: 1em 0;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .txt-sobre {
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-indent: 20px;
+    }
+
+    .quem-somos {
+        display: none;
+    }
+
+    .container-social {
+        background-color: var(--cor-de-fundo);
+        margin: 1em 2em;
+        border-radius: 10px;
+    }
+
+    .coluna {
+        display: flex;
+        align-items: center;
+    }
+
+    .img-perfil {
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.625);
+        margin: 1em;
+        justify-content: center;
+        width: 300px;
+        height: 250px;
+    }
+
+    .txt-social {
+        font-size: 18px;
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        line-height: 1.3em;
+        text-align: justify;
+        text-indent: 20px;
+    }
+
+    .contato {
+        display: none;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: none;
+        align-items: center;
+        justify-content: center;
+        margin: 1em 2em;
+        padding-bottom: 25px;
+        background-color: var(--cor-de-fundo);
+        border-radius: 10px;
+    }
+
+    form label,
+    form legend {
+        display: block;
+        font-size: 20px;
+        margin: 0 0 12px;
+    }
+
+    fieldset {
+        margin: 1em;
+    }
+
+    .input-padrao {
+        display: block;
+        margin: 0 0 20px;
+        width: 70%;
+        padding: 10px 25px;
+    }
+
+    select {
+        margin: 11px 0;
+        text-align: center;
+        width: 25%;
+        padding: 15px 15px;
+        font-size: 15px;
+    }
+
+    option {
+        width: 5%;
+        font-size: 16px;
+        background: #dbd5d5;
+    }
+
+    .enviar {
+        width: 25%;
+        padding: 15px 0;
+        background: orange;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 1s all;
+        margin: 10px 0 0 25px;
+    }
+
+    .enviar:hover {
+        background: darkorange;
+        transform: scale(1.2);
+    }
+
+    .container-localizacao {
+        background-color: var(--cor-de-fundo);
+        margin: 1em 2em;
+        padding: 20px 10px;
+        border-radius: 10px;
+    }
+
+    .mapa {
+        display: none;
+    }
+
+    .mapa h3 {
+        margin-top: 1em;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .mapa-conteudo {
+        display: flex;
+        justify-content: center;
+        width: 650px;
+        margin: 1em 0;
+    }
+
+    .img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+
+    .img-sala {
+        width: auto;
+        height: 20vw;
+        object-fit: cover;
+    }
+
+    .copyright {
+        color: black;
+        font: --fonte-footer;
+        font-size: 13px;
+        margin-bottom: 1em;
+    }
+
+    footer {
+        margin-top: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+}

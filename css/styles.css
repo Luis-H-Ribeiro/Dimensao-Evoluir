@@ -1,0 +1,19 @@
+:root {
+    --azul-principal: #0386ff;
+    --amarelo-principal: #fdeb00;
+    --vermelho-principal: #ff0000;
+    --verde-principal: #07eb3b;
+    --fonte-titulo: 'Great Vibes', cursive;
+    --fonte-subtitulo: 'Kalam', cursive;
+    --fonte-footer: font-family: 'Roboto Mono', monospace;
+    --cor-de-fundo: rgb(235, 235, 235);
+}
+
+body {
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: 400;
+    background-image: linear-gradient(to bottom, white, #0386ff, white);
+}
+
+
